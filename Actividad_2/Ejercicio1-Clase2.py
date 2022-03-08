@@ -1,6 +1,6 @@
 
 
-from Library import *
+from api.Library import *
 
 def main():
     SALARIO_MIN = 1000000
