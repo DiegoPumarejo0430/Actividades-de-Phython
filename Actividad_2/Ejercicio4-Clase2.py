@@ -34,7 +34,7 @@ def main():
 
    # print(persona["nombre"])
    # print(f"{persona['nombre']} {persona['apellido']}    ")
-    print(f"Nombre: {persona['datos personales']['nombre']} Apellido: {persona['datos personales']['nombre']}  ")
+    print(f"Nombre: {persona['datospersonales']['nombre']} Apellido: {persona['datospersonales']['nombre']}  ")
 
 
 
