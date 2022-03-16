@@ -22,7 +22,7 @@ def main():
         if opcion==1 :
             print("Agregar Empleados")
 
-
+            
         if opcion==2 :
             
             print("eliminar empleado")
