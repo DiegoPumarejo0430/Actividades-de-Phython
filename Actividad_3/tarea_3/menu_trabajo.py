@@ -24,6 +24,7 @@ def main():
 
 
         if opcion==2 :
+            
             print("eliminar empleado")
 
 
@@ -37,7 +38,8 @@ def main():
 
 
         if opcion==4 :
-            print("salir")
+            print("cerrando...")
+            os.system("timeout /t 2 >null")
 
 
 
