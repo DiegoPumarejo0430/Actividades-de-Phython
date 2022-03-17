@@ -57,10 +57,13 @@ def main():
          
 
         if opcion=="2" :
-            
             print("eliminar empleado")
-
-            #yonatann
+            if len(lista_empleados) == 0:
+               print("Lista Vacia")
+            else:
+                posicion = int(input("Digite Posicion a Buscar: "))
+		        del lista_empleados[posicion]
+                print(lista_empleados)				
 
 
 
