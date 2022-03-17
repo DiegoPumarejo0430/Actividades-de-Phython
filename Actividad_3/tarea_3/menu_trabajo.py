@@ -63,10 +63,10 @@ def main():
             else:
                 posicion = int(input("Digite Posicion a Buscar: "))
                 lista_empleados.pop(posicion)
-                print(lista_empleados.pop(posicion)) #Imprime el eliminado
+                #print(lista_empleados.pop(posicion)) #Imprime el eliminado
                 print("")
-                print("")
-                print(lista_empleados)	#Imprime la lista			
+                print(lista_empleados) 
+                print("")	#Imprime la lista			
 
 
 
@@ -81,3 +81,5 @@ def main():
         if opcion=="4" :
             print("cerrando...")
         
+if __name__ == "__main__":
+    main()
