@@ -64,7 +64,7 @@ def main():
             else:
                 posicion = int(input("Digite Posicion a Buscar: "))
                 lista_empleados.pop(posicion)
-                print(lista.pop(posicion)) #Imprime el eliminado
+                print(lista_empleados.pop(posicion)) #Imprime el eliminado
                 print("")
                 print("")
                 print(lista_empleados)	#Imprime la lista			
