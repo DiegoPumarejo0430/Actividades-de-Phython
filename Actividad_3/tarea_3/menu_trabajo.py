@@ -1,4 +1,5 @@
 import os, time
+import collections
 def mostrar_lista(lista):
     if len(lista) == 0 :
         print ("**  lista vacia  **")
@@ -62,7 +63,7 @@ def main():
                print("Lista Vacia")
             else:
                 posicion = int(input("Digite Posicion a Buscar: "))
-		        del lista_empleados[posicion]
+                lista_empleados.pop(posicion)
                 print(lista_empleados)				
 
 
