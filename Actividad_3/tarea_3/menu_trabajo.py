@@ -73,7 +73,6 @@ def main():
             mostrar_lista(lista_empleados)
         input()
 
-
         if opcion=="4" :
             print("cerrando...")
         
