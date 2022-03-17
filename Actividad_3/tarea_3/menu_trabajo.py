@@ -1,4 +1,4 @@
-import os
+import os, time
 def mostrar_lista(lista):
     if len(lista) == 0 :
         print ("**  lista vacia  **")
@@ -7,11 +7,10 @@ def mostrar_lista(lista):
             print(lista[i])
 
 def main():
-    os.system("color 09")
     opcion = 0
     lista_empleados = []
     while opcion != 4 :
-        os.system("cls")
+        os.system("clear")
         print("\n ----------------------------------------------------------------------------")
         print("                         LISTA DE EMPLEADOS                                    ")
         print("\n ----------------------------------------------------------------------------")
@@ -31,15 +30,15 @@ def main():
 
 
         if opcion==3 :
-            os.system("cls")
+            os.system("clear")
             print("MOSTRANDO LISTA DE EMPLEADOS...")
             mostrar_lista(lista_empleados)
-            os.system("timeout /t 5 >null")
+            time.sleep(3)
 
 
         if opcion==4 :
             print("cerrando...")
-            os.system("timeout /t 2 >null")
+            
 
 
 
