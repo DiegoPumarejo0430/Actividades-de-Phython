@@ -1,5 +1,4 @@
 import os, time
-import collections
 def mostrar_lista(lista):
     if len(lista) == 0 :
         print ("**  lista vacia  **")
