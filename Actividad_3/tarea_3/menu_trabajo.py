@@ -55,7 +55,6 @@ def main():
                     Agregar_posicion(pos_h,lista_empleados)
                     # Agregar_final(lista_empleados)
          
-
         if opcion=="2" :
             print("eliminar empleado")
             if len(lista_empleados) == 0:
@@ -68,9 +67,6 @@ def main():
                 print(lista_empleados) 
                 print("")	#Imprime la lista			
 
-
-
-
         if opcion=="3" :
             os.system("clear")
             print("MOSTRANDO LISTA DE EMPLEADOS...")
@@ -81,5 +77,5 @@ def main():
         if opcion=="4" :
             print("cerrando...")
         
-if __name__ == "__main__":
-    main()
+if __name__=="__main__":
+    main()        
