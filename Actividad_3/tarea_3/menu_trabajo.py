@@ -80,4 +80,6 @@ def main():
 
         if opcion=="4" :
             print("cerrando...")
-        
+
+if __name__=="__main__":
+    main()        
