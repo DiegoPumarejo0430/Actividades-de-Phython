@@ -3,7 +3,8 @@ import os
 class persona():
     def __init__(self):
         self.__persona = {}
-        self.__listapersonas = {}
+        self.__listapersonas =[]
+
     def agregarpersona(self, cedula,nombre, apellido, direccion, telefono):
         self.__persona = {
             'cedula': cedula,
@@ -27,7 +28,7 @@ class Empleado(persona):
         apellido = input("Digite su apellido:")
         direccion = input("Digite su direccion:")
         telefono = input("Digite su telefono:")
-        salario = float(input("Digite su ceedula:"))
+        salario = float(input("Digite su salario:"))
 
         per = {
             'cedula': cedula,
@@ -39,13 +40,13 @@ class Empleado(persona):
 
         self.__devengado ={
             'salario': salario,
-            'alimentacion': alimentacion,
-            'transporte': transporte,
+            'alimentacion': 0,
+            'transporte': 0
         }
 
-        self.__devengado ={
-            'salud': salud,
-            'pension': pension,
+        self.__deducciones ={
+            'salud': 0,
+            'pension': 0
         }
 
         super().agregarpersona(cedula, nombre, apellido,direccion, telefono)
@@ -58,17 +59,18 @@ class Empleado(persona):
             self.__devengado['transporte'] = 60000
 
     def calculardeducciones(self):
-        self.__deducciones['salud'] = self.__devengado['salario'] * 0.04
-        self.__deducciones['pension'] = self.__devengado['salario'] * 0.0337
+        if self.__deducciones['salud'] == self.__devengado['salario'] * 4 / 1000:
+            self.__deducciones['pension'] = self.__devengado['salario'] * 0.0337
 
     def menu(self, opciones):
         while(True):
-             os.system("clear")
-             for item in range(len(opciones)):
-                 print(opciones[item])
-            opciones = input("Digite una opcion correcta: ")
+            os.system("clear")
+            for item in range(len(opciones)):
+                print(opciones[item]) 
 
-            if opcion == '1':
+            opcion = input("digite una opcion correcta: ")
+
+            if opcion == "1":
                 os.system("clear")
                 self.agregarempleado()
                 self.calculardevengado()
@@ -77,15 +79,16 @@ class Empleado(persona):
             elif opcion == "2":
                 os.system("clear")
                 print(self.__listaempleados)
-                input("Digite una tecla para continuar...")
+                input("digite una tecla para continuar ...")
 
 def menuPrincipal():
+    os.system("clear")
     opciones = (
-        os.system("clear")
-        "MENU PRINCIPAL"
-        "1. AdicionarEmpleados"
-        "2. Mostrar Empleados"
-        "3. Eliminar Empleados"
+        
+        "MENU PRINCIPAL",
+        "1. AdicionarEmpleados",
+        "2. Mostrar Empleados",
+        "3. Eliminar Empleados",
         "S. Salir"
     )
 
